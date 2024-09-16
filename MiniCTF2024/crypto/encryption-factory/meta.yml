@@ -1,0 +1,10 @@
+challenge:
+  title: encryption factory
+  category: crypto
+  difficulty: easy
+  description: I am opening an encryption factory, and it will absolutely encrypt everything
+  author: chiv
+  flag: minictf{i_gu3ss_w3_using_th3_s4m3_k3y5tr34m_n0w}
+  distribution:
+  - challenge.py
+  - output.json

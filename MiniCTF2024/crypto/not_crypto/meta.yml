@@ -1,0 +1,14 @@
+challenge:
+  title: not crypto
+  category: crypto
+  difficulty: easy
+  description: Someone played one too many ARGs...
+  author: snickey
+  flags:
+    - minictf{we_dont_play_fair}
+    - minictf{WEDONTPLAYFAIR}
+  distribution:
+    - flag.txt
+    - key.txt
+  hosted: false
+  comment:
