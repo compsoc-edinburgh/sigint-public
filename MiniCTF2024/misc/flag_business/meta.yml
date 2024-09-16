@@ -1,0 +1,9 @@
+challenge:
+  title: flag business
+  category: misc
+  difficulty: easy
+  description: You can only transfer to me but can you have enough balance to buy the flag?
+  author: chiv
+  flag: sigint{in73g3r_0v3rf10w}
+  distribution:
+    - main.c

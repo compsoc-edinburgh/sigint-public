@@ -1,0 +1,9 @@
+challenge:
+  title: oh shit git
+  category: misc
+  difficulty: easy
+  description: "We got our hands on a git repo that was written by a junior SE. We think that they did a bad job at scrubbing the creds that they accidentally included. See if you can extract them!"
+  author: "social_anthrax"
+  flag: "minictf{5cru66in9_cr3d5_15_h4rd3r_th4n_y0u_th1nk}"
+  distribution:
+    - oh-shit-git.zip

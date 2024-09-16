@@ -1,0 +1,8 @@
+challenge:
+  title: Calculate Me
+  category: Misc
+  difficulty: Easy
+  description: Can you do some simple math for me? x100. You have 10s.\n Hint: Download pwntools and use it to interact with the server.
+  author: HorizonFocus
+  flag: minictf{4u70m4710n_15_600d}
+  distribution:
