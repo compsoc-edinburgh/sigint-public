@@ -1,0 +1,13 @@
+challenge:
+  title: Jammed Comms
+  category: rev
+  difficulty: easy
+  description: Someone is jamming our communications... Can you help us get to the bottom of this?
+  author: HorizonFocus
+  flags:
+    - minictf{upl1nk_r3st0r3d_177c03789}
+    - minictf{WEDONTPLAYFAIR}
+  distribution:
+    - jam
+  hosted: false
+  comment:
