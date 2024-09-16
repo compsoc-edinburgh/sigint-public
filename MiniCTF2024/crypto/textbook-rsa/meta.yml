@@ -1,0 +1,10 @@
+challenge:
+  title: textbook rsa
+  category: crypto
+  difficulty: medium
+  description: It's effort to get two modulus I'll just encrypt my message twice with different exponents.
+  author: contact chiv. Adapted from beginners CTF 2022 challenge by thrypuro
+  flag: minictf{th1s_1s_pretty_textb00k_but_also_a_fun_attack}
+  distribution:
+    - source.py
+    - out.txt

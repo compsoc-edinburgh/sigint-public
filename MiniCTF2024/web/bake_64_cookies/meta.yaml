@@ -1,0 +1,8 @@
+challenge:
+  title: bake 64 cookies
+  category: web
+  difficulty: Medium
+  description: "I learnt my lesson from last time... and now only the admin user can read my secret page!"
+  author: uyi
+  flag: minictf{b4k3d_1_c00k13_4dm1N}
+  distribution:

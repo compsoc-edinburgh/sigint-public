@@ -1,0 +1,8 @@
+challenge:
+  title: get head
+  category: misc
+  difficulty: Easy
+  description: "There are often key details about a website in the headers of its responses. Download 'Burp Suite' and investigate the following website through it."
+  author: "uyi"
+  flag: "minictf{53cR37_h34D3r5_4r3n7_50_53cR37!}"
+  distribution: 

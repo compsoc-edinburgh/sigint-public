@@ -1,0 +1,16 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: calculate-me
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    ports:
+      - protocol: "TCP"
+        targetPort: 1337
+        port: 31337
+    public: false
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false

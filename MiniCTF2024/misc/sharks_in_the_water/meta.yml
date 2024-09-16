@@ -1,0 +1,8 @@
+challenge:
+  title: Sharks in the Water
+  category: Misc
+  difficulty: Easy
+  description: "PCAP files contain packet data of a network and are used to analyze the network characteristics. In this challenge, you are given a file that contains network transmissions to a server, can you reconstruct the flag? The main tool used in ctfs to solve challenges like this is Wireshark (https://www.wireshark.org)."
+  author: HorizonFocus
+  flag: minictf{unl1k3_b335_y0u_c4n_f1nd_5h4rk5_1n_70rn4d05}
+  distribution: dump.pcap

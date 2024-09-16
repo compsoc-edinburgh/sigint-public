@@ -1,0 +1,1 @@
+FLAG = "minictf{4u70m4710n_15_600d}"

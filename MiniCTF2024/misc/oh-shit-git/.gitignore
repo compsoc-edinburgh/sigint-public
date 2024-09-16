@@ -1,0 +1,6 @@
+*
+# Whitelist
+!meta.yaml
+!.gitignore
+!oh-shit-git.zip
+

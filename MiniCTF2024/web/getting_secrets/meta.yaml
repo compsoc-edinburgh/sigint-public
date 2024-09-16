@@ -1,0 +1,10 @@
+challenge:
+  title: getting secrets
+  category: web
+  difficulty: Easy
+  description: "Apparently I shouldn't keep my secret page in a public link, but there's no way for people to access it from anywhere on my website! Right?"
+  author: "uyi"
+  flag: "minictf{d1r3ct0ry_tr4v3rs4l_b3s7_7h1nG}"
+  distribution:
+  hosted: true
+  comment: 'Same hosted service as "get-head"'

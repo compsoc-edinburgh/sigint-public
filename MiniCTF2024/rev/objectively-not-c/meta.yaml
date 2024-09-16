@@ -1,0 +1,9 @@
+challenge:
+  title: objectively not c
+  category: rev
+  difficulty: hard
+  description: "Some apple fangirl seems to have thrown together a simple encryption program as a part of a C2 server. All we found was this output from the script: `0x48CB7446317F955AE18DA0A12482A436AC432FDD8B98679A10676F94B57B3FA84BB5A075731538DF1052778730B0B17C687F0F9255`. Can you figure out what it said originally?"
+  author: "social_anthrax"
+  flag: "minictf{z3r0d4y_f0rb1d_4pp13_c411_funct10n5_n0rma11y}"
+  distribution:
+    - objectively-not-c/objectively-not-c
