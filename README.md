@@ -4,3 +4,4 @@ Currently hosted here are the public materials for the CompSoc Special Interest 
 
 * Challenge source and solutions
 * Writeups
+* Link to resources
