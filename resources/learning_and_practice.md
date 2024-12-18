@@ -33,4 +33,4 @@ I'm not familiar with resources in this category, there are a lot of suggestions
 They may contain challenges in above categories, but also contain e.g. "Boxes" and challenges normally categorised as "Forensics", "Miscellaneous" etc.
 
 1. [Hack The Box](https://app.hackthebox.com/) [All levels] Some "challenges" are more like jeopardy-style CTF challenges, some are small and more beginner-friendly. "Machines" are generally larger challenges.
-2. [PicoCTF](https://picoctf.com/) [Beginner] A lot of beginner-friendly challenges, but also some more advanced ones. Great for having a taste of all categories as a beginner.
+2. [picoCTF](https://picoctf.com/) [Beginner] A lot of beginner-friendly challenges, but also some more advanced ones. Great for having a taste of all categories as a beginner.
