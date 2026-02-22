@@ -1,0 +1,277 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #95a5a6;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #7f8c8d;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+.btn-small {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+}
+
+/* Form Elements */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dadce0;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* Card Styles */
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.section {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.section h2 {
+    color: #2c3e50;
+    margin-top: 0;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 1rem;
+}
+
+/* Post/Status Card Styles */
+.post-card {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-left: 4px solid #3498db;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.post-card:hover {
+    transform: translateX(5px);
+}
+
+.post-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0 0 0.5rem 0;
+}
+
+.post-meta {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.post-content {
+    color: #34495e;
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+
+.post-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.post-actions form {
+    display: inline;
+    margin: 0;
+}
+
+/* Headings */
+h1 {
+    color: #2c3e50;
+    margin: 0;
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+/* Text Utilities */
+.empty-state {
+    text-align: center;
+    color: #7f8c8d;
+    padding: 2rem;
+}
+
+.truncated {
+    max-height: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.truncated::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background: linear-gradient(transparent, white);
+}
+
+/* Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.read-more {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.narrow-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Dashboard Specific */
+.admin-flag {
+    background: #fff3cd;
+    border: 2px solid #ffc107;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.flag-content {
+    font-family: 'Courier New', monospace;
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 4px;
+    word-break: break-all;
+    margin-top: 0.5rem;
+}
+
+.admin-reports {
+    background: #f0f0f0;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.report-item {
+    background: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    border-left: 4px solid #e74c3c;
+}
+
+.password-reset-form {
+    background: #e8f4f8;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+/* Utility Classes */
+.text-muted {
+    color: #7f8c8d;
+}
+
+.mt-small {
+    margin-top: 0.5rem;
+}
+
+.m-0 {
+    margin: 0;
+}

@@ -1,0 +1,7 @@
+services:
+  baby_xss:
+    build: .
+    ports:
+      - "5005:5000"
+    environment:
+      - FLAG=mini{Th4t_w45_2_3z_L375_S33_Y0u_7Ry_4_R341_0n3}

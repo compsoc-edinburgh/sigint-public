@@ -1,0 +1,9 @@
+{
+  "name": "dom_filter",
+  "description": "Who needs dompurify, I can write that myself",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^5.2.1",
+    "puppeteer": "^24.36.1"
+  }
+}

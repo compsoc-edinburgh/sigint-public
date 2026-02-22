@@ -1,0 +1,6 @@
+services:
+  i_hate_2fa_app:
+    build: .
+    container_name: i_hate_2fa
+    ports:
+      - "3000:3000"

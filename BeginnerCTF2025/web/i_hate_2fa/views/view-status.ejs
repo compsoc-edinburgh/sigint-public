@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= username %>'s Status | Global Secure Systems</title>
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        body {
+            background-color: #f4f7f6;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+        }
+
+        .status-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+        }
+
+        .status-username {
+            font-size: 1.8rem;
+            margin: 0 0 1rem 0;
+        }
+
+        .status-meta {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        .status-content {
+            color: #34495e;
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            word-wrap: break-word;
+            padding: 1.5rem;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .status-actions {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #ecf0f1;
+            display: flex;
+            gap: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Global Secure Systems</h1>
+        <div>
+            <% if (userId) { %>
+                <a href="/dashboard" class="btn btn-primary">Back to Dashboard</a>
+            <% } else { %>
+                <a href="/" class="btn btn-primary">Back Home</a>
+            <% } %>
+        </div>
+    </div>
+
+    <div class="status-container">
+        <h1 class="status-username"><%= username %>'s Status</h1>
+        
+        <div class="status-meta">
+            <strong>Posted:</strong> <%= new Date(status.createdAt).toLocaleString() %>
+        </div>
+
+        <div class="status-content">
+            <%- status.content %>
+        </div>
+
+        <div class="status-actions">
+            <form method="POST" action="/report-status">
+                <input type="hidden" name="username" value="<%= username %>">
+                <button type="submit" class="btn btn-secondary">Report to Admin</button>
+            </form>
+            <a href="/dashboard" class="btn btn-primary">Back to Dashboard</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

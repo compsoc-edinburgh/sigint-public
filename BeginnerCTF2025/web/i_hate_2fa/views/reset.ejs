@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password | Secure Portal</title>
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .reset-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .username-display {
+            color: #1a73e8;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            display: block;
+            font-size: 1.1rem;
+        }
+
+        button {
+            width: 100%;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: #219150;
+        }
+
+        .security-notice {
+            margin-top: 1.5rem;
+            font-size: 0.75rem;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="reset-card">
+        <h1>Set New Password</h1>
+        <span class="username-display">Account: <%= username %></span>
+
+        <form method="POST" action="/reset-password">
+            <input type="hidden" name="token" value="<%= token %>" />
+            <input type="hidden" name="username" value="<%= username %>" />
+            <div class="form-group">
+                <label for="password">New Password</label>
+                <input type="password" id="password" name="newPassword" placeholder="Enter new password" required />
+            </div>
+            <button type="submit">Update Credentials</button>
+        </form>
+
+        <div class="security-notice">
+            Complexity requirements: Minimum 8 characters.
+        </div>
+
+        <a href="/" class="back-link">Back to Home</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+sudo docker run -p 5003:5000 --name 26-mini-pwn-chall3 -d --privileged $(docker build --no-cache -q .)

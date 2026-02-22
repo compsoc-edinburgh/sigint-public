@@ -1,0 +1,1 @@
+sudo docker run -p 5000:5000 --name 26-mini-rev-chall4 -d --privileged $(docker build --no-cache -q .)

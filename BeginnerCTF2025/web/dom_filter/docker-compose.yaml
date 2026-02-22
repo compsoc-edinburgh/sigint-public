@@ -1,0 +1,7 @@
+services:
+  dom_filter:
+    build: .
+    ports:
+      - "5006:5000"
+    environment:
+      - FLAG=mini{7ru57_m3_7h47_w45_n07h1ng}
