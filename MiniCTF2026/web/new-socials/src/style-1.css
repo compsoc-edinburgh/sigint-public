@@ -1,0 +1,41 @@
+:root {
+    --border-color: #e0e0e0;
+    --header-bg-color: #f8f8f8;
+    --font-family: Arial, sans-serif;
+}
+
+
+header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--header-bg-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-family);
+
+}
+
+.Header-Button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.Header-Button:hover {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+

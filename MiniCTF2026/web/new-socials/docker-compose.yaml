@@ -1,0 +1,8 @@
+services:
+  app:
+    build: .
+    ports:
+      - "6004:3001"
+    environment:
+      - NODE_ENV=development
+      - FLAG=SIGINT{47_l3457_y0u_d1dn7_h4v3_70_4v01d_C0R5}

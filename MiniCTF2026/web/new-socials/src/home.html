@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style-1.css">
+    <title>New Social</title>
+
+    <script>
+        async function loadPosts() {
+            try {
+                const response = await fetch('./api/posts');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const posts = await response.json();
+                displayPosts(posts);
+            } catch (error) {
+                console.error('Error fetching posts:', error);
+            }
+        }
+
+        function displayPosts(posts) {
+            const postsContainer = document.querySelector('.Posts');
+            postsContainer.innerHTML = ''; 
+            if (posts.length === 0) {
+                postsContainer.innerHTML = '<p>There\'s currently no posts. How about you create the first one?</p>';
+                return;
+            }
+            postsContainer.innerHTML = '<hr>';
+            posts.forEach(post => {
+                const postElement = document.createElement('div');
+                postElement.id = `post-${post.id}`;
+                postElement.className = 'Post';
+                postElement.innerHTML = `
+                    <h2><a href="./post?id=${post.id}">${post.title}</a></h2>
+                    <p>${post.content}</p>
+                    <small>Posted @ ${new Date(post.date).toISOString()}</small>
+                    <hr>
+                `;
+                postsContainer.appendChild(postElement);
+            });
+        }
+
+        loadPosts();
+    </script>
+
+</head>
+<body>
+    <header>
+        <h1 class="Header-Label">New Social</h1>
+        <div class="Header-Buttons">
+            <a class="Header-Button" id="home" href="./">Home</a>
+            <a class="Header-Button" id="new-post" href="./new-post">New Post</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="Posts">
+
+        </div>
+    </main>
+
+</body>
+</html>

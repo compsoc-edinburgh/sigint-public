@@ -1,0 +1,11 @@
+services:
+  php:
+    image: php:7.4-apache
+    container_name: pathetic_hash_passing
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - "6001:80"
+    environment:
+      - APACHE_DOCUMENT_ROOT=/var/www/html
+      - FLAG=SIGINT{533_php_15n7_much_w0r53_7h4n_J4v45cr1p7_n0w_15_17}
